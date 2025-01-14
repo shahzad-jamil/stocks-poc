@@ -112,8 +112,7 @@ json
   }
 }
 ```
-Contributing
-We welcome contributions! If you'd like to contribute, please fork the repository, make your changes, and submit a pull request. Be sure to follow the project's coding style and conventions.
+
 
 # Steps to contribute:
 1.Fork the repository /n
