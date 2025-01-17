@@ -61,13 +61,13 @@ python app.py
 The server will start and be available at http://127.0.0.1:5000/.
 
 **Endpoints**
-1. /candlestick-chart-tradingview
+# 1. /candlestick-chart-tradingview
 Description: This endpoint returns an HTML page with a TradingView candlestick chart for a specific stock ticker.
 
 Method: GET
 Query Parameters:
-ticker (required): Stock ticker symbol (e.g., "AAPL" for Apple).
-Example Request:
+- ticker (required): Stock ticker symbol (e.g., "AAPL" for Apple).
+ Example Request:
 
 ```bash
 GET http://127.0.0.1:5000/stocks/candlestick-chart-tradingview?ticker=AAPL
@@ -75,17 +75,18 @@ GET http://127.0.0.1:5000/stocks/candlestick-chart-tradingview?ticker=AAPL
 Example Response:
 An HTML page containing a TradingView candlestick chart for the specified stock ticker.
 
-2. /sma-report/details
+# 2. /sma-report/details
 Description: This endpoint retrieves stock data for a specific ticker and calculates the Simple Moving Average (SMA) for a given period, along with other statistics.
 
 Method: GET
 Query Parameters:
-ticker (required): Stock ticker symbol (e.g., "AAPL").
-sma_period (required): Period for the SMA calculation (e.g., 50 for a 50-day SMA).
-start_date (required): Start date for the data range in YYYY-MM-DD format.
-end_date (required): End date for the data range in YYYY-MM-DD format.
-timeframe (optional): Timeframe for data (default is 1d). Other options include 5d, 1wk, etc.
+- ticker (required): Stock ticker symbol (e.g., "AAPL").
+- sma_period (required): Period for the SMA calculation (e.g., 50 for a 50-day SMA).
+- start_date (required): Start date for the data range in YYYY-MM-DD format.
+- end_date (required): End date for the data range in YYYY-MM-DD format.
+- timeframe (optional): Timeframe for data (default is 1d). Other options include 5d, 1wk, etc.
 Example Request:
+
 ```bash
 
 GET http://127.0.0.1:5000/stocks/sma-report/details?ticker=AAPL&sma_period=50&start_date=2023-01-01&end_date=2023-12-31
